@@ -6,7 +6,7 @@ function App() {
   const [files, setFiles] = useState([])
 
   const fetchData = () => {
-    fetch("/api/files")
+    fetch("https://server-bluestem.azurewebsites.net/api/files")
       .then(response => {
         return response.text();
       })
